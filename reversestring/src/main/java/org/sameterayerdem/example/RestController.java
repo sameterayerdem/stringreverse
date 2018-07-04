@@ -13,7 +13,7 @@ public class RestController {
 	
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public ModelAndView get(@RequestParam(name="input") String name,ModelAndView modelAndView)
-	{  
+	{  //control
 		if(name!="")
 		name=service.convert(name);
 		modelAndView.addObject("value", name);
